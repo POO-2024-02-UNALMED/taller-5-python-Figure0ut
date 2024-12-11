@@ -18,14 +18,14 @@ class Animal:
         from .pez import Pez
         from .anfibio import Anfibio
 
-        conteo = {
-            "Mamíferos": Mamifero.contar(),
+        return {
+            "Mamiferos": Mamifero.contar(), 
             "Aves": Ave.contar(),
             "Reptiles": Reptil.contar(),
             "Peces": Pez.contar(),
             "Anfibios": Anfibio.contar()
         }
-        return '\n'.join(f"{tipo} : {cantidad}" for tipo, cantidad in conteo.items())
+
 
 
     def toString(self):
