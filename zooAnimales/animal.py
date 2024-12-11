@@ -18,13 +18,15 @@ class Animal:
         from .pez import Pez
         from .anfibio import Anfibio
 
-        return {
+        conteo = {
             "Mamíferos": Mamifero.contar(),
             "Aves": Ave.contar(),
             "Reptiles": Reptil.contar(),
             "Peces": Pez.contar(),
             "Anfibios": Anfibio.contar()
         }
+        return '\n'.join(f"{tipo} : {cantidad}" for tipo, cantidad in conteo.items())
+
 
     def toString(self):
         if self.zona and self.zoo:
