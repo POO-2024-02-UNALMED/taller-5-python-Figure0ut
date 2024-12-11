@@ -35,16 +35,16 @@ class Reptil(Animal):
         return "reptar"
     
     def getColorEscamas(self):
-        return self._color_escamas
+        return self._colorEscamas
 
     def getLargoCola(self):
-        return self._largo_cola
+        return self._largoCola
 
-    def setColorEscamas(self, color_escamas):
-        self._color_escamas = color_escamas
+    def setColorEscamas(self, colorEscamas):
+        self._colorEscamas = colorEscamas
 
-    def setLargoCola(self, largo_cola):
-        self._largo_cola = largo_cola
+    def setLargoCola(self, largoCola):
+        self._largoCola = largoCola
 
     def toString(self):
         return f"Mi nombre es {self.getNombre()}, tengo una edad de {self.getEdad()}, habito en {self.getHabitat()} y mi genero es {self.getGenero()}"

@@ -35,13 +35,13 @@ class Pez(Animal):
         return "nadar"
     
     def getColorEscamas(self):
-        return self._color_escamas
+        return self._colorEscamas
 
     def getCantidadAletas(self):
-        return self._cantidad_aletas
+        return self._cantidadAletas
 
-    def setColorEscamas(self, color_escamas):
-        self._color_escamas = color_escamas
+    def setColorEscamas(self, colorEscamas):
+        self._colorEscamas = colorEscamas
 
-    def setCantidadAletas(self, cantidad_aletas):
-        self._cantidad_aletas = cantidad_aletas
+    def setCantidadAletas(self, cantidadAletas):
+        self._cantidadAletas = cantidadAletas
