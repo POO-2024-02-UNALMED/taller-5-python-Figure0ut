@@ -18,13 +18,14 @@ class Animal:
         from .pez import Pez
         from .anfibio import Anfibio
 
-        return {
-            "Mamiferos": Mamifero.contar(), 
-            "Aves": Ave.contar(),
-            "Reptiles": Reptil.contar(),
-            "Peces": Pez.contar(),
-            "Anfibios": Anfibio.contar()
-        }
+        return (
+            f"Mamiferos : {Mamifero.contar()}\n"
+            f"Aves : {Ave.contar()}\n"
+            f"Reptiles : {Reptil.contar()}\n"
+            f"Peces : {Pez.contar()}\n"
+            f"Anfibios : {Anfibio.contar()}"
+        )
+
 
 
 
