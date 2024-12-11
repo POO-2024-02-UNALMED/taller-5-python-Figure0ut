@@ -1,12 +1,12 @@
 class Animal:
     totalAnimales = 0
 
-    def __init__(self, nombre, edad, habitat, genero, zona=None, zoo=None):
-        self.nombre = nombre
-        self.edad = edad
-        self.habitat = habitat
-        self.genero = genero
-        self.zona = zona
+    def __init__(self, nombre, edad, habitat, genero, zona="", zoo=""):
+        self._nombre = nombre
+        self._edad = edad
+        self._habitat = habitat
+        self._genero = genero
+        self._zona = zona
         self.zoo = zoo
         Animal.totalAnimales += 1  
 
@@ -25,11 +25,12 @@ class Animal:
             "Peces": Pez.contar(),
             "Anfibios": Anfibio.contar()
         }
+
     def toString(self):
         if self.zona and self.zoo:
-            return f"Mi nombre es {self.nombre}, tengo una edad de {self.edad}, habito en {self.habitat} y mi género es {self.genero}, la zona en la que me ubico es {self.zona.nombre}, en el {self.zoo.nombre}."
+            return f"Mi nombre es {self.getNombre()}, tengo una edad de {self.getEdad()}, habito en {self.getHabitat()} y mi género es {self.getGenero()}, la zona en la que me ubico es {self.zona.nombre}, en el {self.zoo.nombre}."
         else:
-            return f"Mi nombre es {self.nombre}, tengo una edad de {self.edad}, habito en {self.habitat} y mi género es {self.genero}."
+            return f"Mi nombre es {self.getNombre()}, tengo una edad de {self.getEdad()}, habito en {self.getHabitat()} y mi género es {self.getGenero()}."
 
     def movimiento(self):
         return "desplazarse"
@@ -57,3 +58,6 @@ class Animal:
 
     def setGenero(self, genero):
         self._genero = genero
+    
+    def setZona(self, zona):
+        self._zona = zona
