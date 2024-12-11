@@ -1,8 +1,8 @@
-from .Mamifero import Mamifero
-from .Ave import Ave
-from .Reptil import Reptil
-from .Pez import Pez
-from .Anfibio import Anfibio
+from .mamifero import Mamifero
+from .ave import Ave
+from .reptil import Reptil
+from .pez import Pez
+from .anfibio import Anfibio
 
 class Animal:
     totalAnimales = 0

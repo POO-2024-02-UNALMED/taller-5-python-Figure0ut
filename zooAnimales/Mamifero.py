@@ -1,4 +1,4 @@
-from .Animal import Animal
+from .animal import Animal
 
 class Mamifero(Animal):
     contador = 0 
