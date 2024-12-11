@@ -1,5 +1,3 @@
-from .zoologico import Zoologico
-
 class Zona:
     def __init__(self, nombre, zoo):
         self.nombre = nombre
