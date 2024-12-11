@@ -33,3 +33,18 @@ class Reptil(Animal):
 
     def movimiento(self):
         return "reptar"
+    
+    def getColorEscamas(self):
+        return self._color_escamas
+
+    def getLargoCola(self):
+        return self._largo_cola
+
+    def setColorEscamas(self, color_escamas):
+        self._color_escamas = color_escamas
+
+    def setLargoCola(self, largo_cola):
+        self._largo_cola = largo_cola
+
+    def toString(self):
+        return f"Mi nombre es {self.getNombre()}, tengo una edad de {self.getEdad()}, habito en {self.getHabitat()} y mi genero es {self.getGenero()}"

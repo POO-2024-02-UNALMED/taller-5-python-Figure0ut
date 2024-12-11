@@ -32,3 +32,12 @@ class Ave(Animal):
 
     def movimiento(self):
         return "volar"
+
+    def getColorPlumas(self):
+        return self._color_plumas
+
+    def setColorPlumas(self, color_plumas):
+        self._color_plumas = color_plumas
+
+    def toString(self):
+        return f"Mi nombre es {self.getNombre()}, tengo una edad de {self.getEdad()}, habito en {self.getHabitat()} y mi genero es {self.getGenero()}"

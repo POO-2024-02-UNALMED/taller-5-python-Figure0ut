@@ -33,3 +33,15 @@ class Mamifero(Animal):
 
     def movimiento(self):
         return "desplazarse"
+
+    def getPelaje(self):
+        return self._pelaje
+
+    def getPatas(self):
+        return self._patas
+
+    def setPelaje(self, pelaje):
+        self._pelaje = pelaje
+
+    def setPatas(self, patas):
+        self._patas = patas

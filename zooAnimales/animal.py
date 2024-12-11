@@ -34,3 +34,26 @@ class Animal:
     def movimiento(self):
         return "desplazarse"
     
+    def getNombre(self):
+        return self._nombre
+
+    def getEdad(self):
+        return self._edad
+
+    def getHabitat(self):
+        return self._habitat
+
+    def getGenero(self):
+        return self._genero
+
+    def setNombre(self, nombre):
+        self._nombre = nombre
+
+    def setEdad(self, edad):
+        self._edad = edad
+
+    def setHabitat(self, habitat):
+        self._habitat = habitat
+
+    def setGenero(self, genero):
+        self._genero = genero
