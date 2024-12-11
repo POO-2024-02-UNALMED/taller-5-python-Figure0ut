@@ -1,9 +1,3 @@
-from .mamifero import Mamifero
-from .ave import Ave
-from .reptil import Reptil
-from .pez import Pez
-from .anfibio import Anfibio
-
 class Animal:
     totalAnimales = 0
 
@@ -18,6 +12,12 @@ class Animal:
 
     @classmethod
     def totalPorTipo(cls):
+        from .mamifero import Mamifero
+        from .ave import Ave
+        from .reptil import Reptil
+        from .pez import Pez
+        from .anfibio import Anfibio
+
         return {
             "Mamíferos": Mamifero.contar(),
             "Aves": Ave.contar(),
