@@ -8,8 +8,8 @@ class Mamifero(Animal):
 
     def __init__(self, nombre, edad, habitat, genero, pelaje, patas, zona=None, zoo=None):
         super().__init__(nombre, edad, habitat, genero, zona, zoo)
-        self.pelaje = pelaje
-        self.patas = patas
+        self._pelaje = pelaje
+        self._patas = patas
         Mamifero.contador += 1
         Mamifero.listado.append(self)
 
@@ -30,6 +30,9 @@ class Mamifero(Animal):
     @classmethod
     def cantidadMamiferos(cls):
         return cls.contador
+    
+    def isPelaje(self):
+        return self._pelaje
 
     def movimiento(self):
         return "desplazarse"

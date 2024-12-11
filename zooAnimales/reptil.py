@@ -8,8 +8,8 @@ class Reptil(Animal):
 
     def __init__(self, nombre, edad, habitat, genero, colorEscamas, largoCola, zona=None, zoo=None):
         super().__init__(nombre, edad, habitat, genero, zona, zoo)
-        self.colorEscamas = colorEscamas
-        self.largoCola = largoCola
+        self._colorEscamas = colorEscamas
+        self._largoCola = largoCola
         Reptil.contador += 1
         Reptil.listado.append(self) 
 
